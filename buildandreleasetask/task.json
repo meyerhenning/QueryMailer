@@ -1,0 +1,92 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "18370706-38f2-4477-a01b-7d42d6a73660",
+    "name": "QueryMailer",
+    "friendlyName": "QueryMailer",
+    "description": "Sends a mail including a filtered work item table to given receivers by using ADO REST API functionality.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Henning Meyer",
+    "version": {
+        "Major": 0,
+        "Minor": 3,
+        "Patch": 0
+    },
+    "instanceNameFormat": "QueryMailer",
+    "inputs": [
+        {
+            "name": "accessToken",
+            "type": "string",
+            "label": "Access Token for API authorization",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Access Token used for API authorization.",
+            "aliases": ["token"]
+        },
+        {
+            "name": "organization",
+            "type": "string",
+            "label": "Azure DevOps organization",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The name of the Azure DevOps organization.",
+            "aliases": ["org"]
+        },
+        {
+            "name": "project",
+            "type": "string",
+            "label": "Azure DevOps project",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The name of the Azure DevOps project.",
+            "aliases": ["proj"]
+        },
+        {
+            "name": "subject",
+            "type": "string",
+            "label": "Mail subject",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The subject of the mail."
+        },
+        {
+            "name": "message",
+            "type": "multiLine",
+            "label": "Additional mail message",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The message included in the mail.",
+            "aliases": ["msg"]
+        },
+        {
+            "name": "receivers",
+            "type": "multiLine",
+            "label": "TfIds of mail receivers",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The tfIds of the users the mail get send to.",
+            "aliases": ["to"]
+        },
+        {
+            "name": "cc",
+            "type": "multiLine",
+            "label": "TfIds of mail copy receivers",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The tfIds of the users the mail copy get send to."
+        },
+        {
+            "name": "wiql",
+            "type": "multiLine",
+            "label": "WIQL query",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The WIQL query to process."
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "task.js"
+        }
+    }
+}

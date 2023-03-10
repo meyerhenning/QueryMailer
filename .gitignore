@@ -1,3 +1,11 @@
+#addition
+*.vsix
+images
+license.md 
+README.md 
+vss-extension.json
+.taskkey
+
 # Logs
 logs
 *.log
