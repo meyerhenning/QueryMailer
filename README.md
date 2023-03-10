@@ -49,5 +49,7 @@ The table contents are defined by the WIQL query.
 - The mail address of the token owner gets displayed in the mail
 - Receivers need to have permissions to read the included work items
 
-## Dependencies
+## Main Dependencies
 - [Azure DevOps Client for Node.js](https://github.com/microsoft/azure-devops-node-api)
+- [Azure DevOps Extension SDK](https://github.com/microsoft/azure-devops-extension-sdk)
+- [Azure Pipelines Task Lib](https://github.com/microsoft/azure-pipelines-task-lib)
