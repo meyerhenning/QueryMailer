@@ -7,6 +7,10 @@ The task encapsulates the [Work Item Tracking / Send Mail](https://learn.microso
 Get it from the Visual Studio Marketplace: <br>
 https://marketplace.visualstudio.com/items?itemName=HenningMeyer.querymailer
 
+## Agent Specification
+
+✅ windows-latest <br> ✅ macos-latest <br> ✅ ubuntu-latest
+
 ## Usage
 
 ```yml
