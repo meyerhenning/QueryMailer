@@ -1,7 +1,7 @@
 # QueryMailer
 
 QueryMailer is an Azure DevOps Extension that provides a task for sending WIQL query results via mail.
-The task encapsulates the **Work Item Tracking / Send Mail** functionality of the Azure DevOps Services REST API.
+The task encapsulates the [Work Item Tracking / Send Mail](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/send-mail/send-mail?view=azure-devops-rest-7.1) functionality of the Azure DevOps Services REST API.
 
 ## Installation
 Get it from the Visual Studio Marketplace: <br>
