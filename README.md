@@ -33,7 +33,7 @@ steps:
 
 | Parameter | Aliases | Required | Description
 | - | - | - | - |
-| accessToken | token | true | The Access Token used for API authorization |
+| accessToken | token | true | The Access Token used for API authorization <br> Required scopes: **vso.work** |
 | organization | org | true | The name of the Azure DevOps organization |
 | project | proj | true | The name of the Azure DevOps project |
 | subject | | true | The subject of the mail |
